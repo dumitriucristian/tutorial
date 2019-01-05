@@ -1,0 +1,14 @@
+columns:
+    name:
+        label: 'Movie Name'
+        type: text
+        searchable: true
+        sortable: true
+    description:
+        label: 'Movie Description'
+        type: text
+    year:
+        label: 'Movie Year'
+        type: number
+        searchable: true
+        sortable: true

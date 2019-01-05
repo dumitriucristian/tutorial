@@ -1,0 +1,15 @@
+title = "Movies"
+url = "/movies"
+is_hidden = 0
+
+[builderList]
+modelClass = "Cris\Movies\Models\Movie"
+scope = "-"
+scopeValue = "{{ :scope }}"
+displayColumn = "name"
+noRecordsMessage = "No records found"
+detailsPage = "-"
+detailsUrlParameter = "id"
+pageNumber = "{{ :page }}"
+==
+{% component 'builderList' %}

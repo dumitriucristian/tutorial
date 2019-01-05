@@ -1,0 +1,17 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table cris_movies_'
+    - builder_table_create_cris_movies_.php
+1.0.3:
+    - 'Updated table cris_movies_'
+    - builder_table_update_cris_movies_.php
+1.0.4:
+    - 'Updated table cris_movies_'
+    - builder_table_update_cris_movies__2.php
+1.0.5:
+    - 'Updated table cris_movies_'
+    - builder_table_update_cris_movies__3.php
+1.0.6:
+    - 'Updated table cris_movies_'
+    - builder_table_update_cris_movies__4.php

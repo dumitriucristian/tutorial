@@ -1,0 +1,11 @@
+name: Movies
+modelClass: Cris\Movies\Models\Movie
+form: $/cris/movies/models/movie/fields.yaml
+defaultRedirect: cris/movies/movies
+create:
+    redirect: 'cris/movies/movies/update/:id'
+    redirectClose: cris/movies/movies
+update:
+    redirect: cris/movies/movies
+    redirectClose: cris/movies/movies
+preview: {  }

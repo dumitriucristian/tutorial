@@ -1,0 +1,16 @@
+fields:
+    name:
+        label: 'Movie Name'
+        span: auto
+        required: 1
+        defaultFrom: name
+        type: text
+    description:
+        label: 'Movie Description'
+        size: small
+        span: auto
+        type: richeditor
+    year:
+        label: Year
+        span: auto
+        type: text

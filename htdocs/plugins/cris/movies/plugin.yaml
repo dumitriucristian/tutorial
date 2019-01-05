@@ -1,0 +1,11 @@
+plugin:
+    name: 'cris.movies::lang.plugin.name'
+    description: 'cris.movies::lang.plugin.description'
+    author: cris
+    icon: oc-icon-video-camera
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: Movies
+        url: cris/movies/movies
+        icon: icon-video-camera
