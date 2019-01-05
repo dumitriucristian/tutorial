@@ -1,0 +1,12 @@
+title = "movie-details"
+url = "/movie/:id"
+is_hidden = 0
+layout = "default"
+[builderDetails]
+modelClass = "Cris\Movies\Models\Movie"
+identifierValue = "{{ :id }}"
+modelKeyColumn = "id"
+displayColumn = "name"
+notFoundMessage = "Record not found"
+==
+{% component 'builderDetails' %}

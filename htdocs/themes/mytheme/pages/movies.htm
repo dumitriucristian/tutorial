@@ -1,7 +1,7 @@
 title = "Movies"
 url = "/movies"
+layout = "default"
 is_hidden = 0
-layout="default"
 
 [builderList]
 modelClass = "Cris\Movies\Models\Movie"
@@ -9,7 +9,8 @@ scope = "-"
 scopeValue = "{{ :scope }}"
 displayColumn = "name"
 noRecordsMessage = "No records found"
-detailsPage = "-"
+detailsPage = "movie-details"
+detailsKeyColumn = "id"
 detailsUrlParameter = "id"
 pageNumber = "{{ :page }}"
 ==
@@ -29,11 +30,13 @@ pageNumber = "{{ :page }}"
                     <a href="{{ detailsPage|page({ (detailsUrlParameter): attribute(record, detailsKeyColumn) }) }}">
                 {% endif %}
 
-                {{ attribute(record, displayColumn) }}
+                    <h2> {{ record.name }} </h2>
+
 
                 {% if detailsPage %}
                     </a>
                 {% endif %}
+            {{ record.description | raw}}
             {% endspaceless %}
         </li>
     {% else %}
