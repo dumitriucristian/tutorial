@@ -22,3 +22,12 @@ fields:
             type: slug
         defaultFrom: name
         type: text
+    poster:
+        label: 'Add Poster'
+        span: auto
+        mode: file
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        type: fileupload

@@ -17,6 +17,9 @@ notFoundMessage = "Record not found"
 {% if record %}
 <h2>{{ record.name }}</h2>
     {{ record.description|raw}}
+    {% if record.poster %}
+    <img src="{{record.poster.thumb(300,auto)}}">
+    {% endif %}
 {% else %}
     {{ notFoundMessage }}
 {% endif %}
