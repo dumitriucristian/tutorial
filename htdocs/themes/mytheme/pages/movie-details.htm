@@ -30,7 +30,7 @@ notFoundMessage = "Record not found"
     </ul>
 
     {% for genre in record.genre %}
-        {{genre.genre_title}}
+    <a href="/genres-movie/{{genre.genre_title}}">{{genre.genre_title}}</a>
     {% endfor %}
 {% else %}
     {{ notFoundMessage }}
