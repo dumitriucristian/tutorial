@@ -1,0 +1,5 @@
+title: Genre
+modelClass: Cris\Movies\Models\Genre
+nameFrom: title
+toolbar:
+    buttons: reorder_toolbar

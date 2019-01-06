@@ -9,3 +9,8 @@ navigation:
         label: Movies
         url: cris/movies/movies
         icon: icon-video-camera
+        sideMenu:
+            side-menu-item:
+                label: Genres
+                url: cris/movies/genre
+                icon: icon-tag

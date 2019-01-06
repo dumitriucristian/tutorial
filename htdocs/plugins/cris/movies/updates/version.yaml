@@ -18,3 +18,27 @@
 1.0.7:
     - 'Updated table cris_movies_'
     - builder_table_update_cris_movies__5.php
+1.0.8:
+    - 'Created table cris_movies_genre'
+    - builder_table_create_cris_movies_genre.php
+1.0.9:
+    - 'Created table cris_movies_movies_genre'
+    - builder_table_create_cris_movies_movies_genre.php
+1.0.10:
+    - 'Updated table cris_movies_genre'
+    - builder_table_update_cris_movies_genre.php
+1.0.11:
+    - 'Updated table cris_movies_'
+    - builder_table_update_cris_movies__6.php
+1.0.12:
+    - 'Updated table cris_movies_movies_genre'
+    - builder_table_update_cris_movies_movies_genre.php
+1.0.13:
+    - 'Updated table cris_movies_genre'
+    - builder_table_update_cris_movies_genre_2.php
+1.0.14:
+    - 'Updated table cris_movies_'
+    - builder_table_update_cris_movies__7.php
+1.0.15:
+    - 'Updated table cris_movies_genre'
+    - builder_table_update_cris_movies_genre_3.php

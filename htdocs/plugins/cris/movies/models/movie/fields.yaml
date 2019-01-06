@@ -40,3 +40,9 @@ fields:
             mode: crop
             extension: auto
         type: fileupload
+    genre:
+        label: 'Add Genre'
+        nameFrom: genre_title
+        descriptionFrom: description
+        span: auto
+        type: relation

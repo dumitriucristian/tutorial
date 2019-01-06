@@ -1,0 +1,11 @@
+fields:
+    title:
+        label: 'Add Genre'
+        span: auto
+        type: text
+    slug:
+        label: 'Genre slug'
+        span: auto
+        default: ''
+        defaultFrom: title
+        type: text

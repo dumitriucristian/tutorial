@@ -28,6 +28,10 @@ notFoundMessage = "Record not found"
         <li><a href="{{image.path}}"><img src="{{image.thumb(300,auto)}}"></a></li>
     {% endfor %}
     </ul>
+
+    {% for genre in record.genre %}
+        {{genre.genre_title}}
+    {% endfor %}
 {% else %}
     {{ notFoundMessage }}
 {% endif %}

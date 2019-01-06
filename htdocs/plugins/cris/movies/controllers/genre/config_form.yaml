@@ -1,0 +1,10 @@
+name: Genre
+modelClass: Cris\Movies\Models\Genre
+form: $/cris/movies/models/genre/fields.yaml
+defaultRedirect: cris/movies/genre
+create:
+    redirect: 'cris/movies/genre/update/:id'
+    redirectClose: cris/movies/genre
+update:
+    redirect: cris/movies/genre
+    redirectClose: cris/movies/genre
