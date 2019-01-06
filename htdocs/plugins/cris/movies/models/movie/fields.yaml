@@ -31,3 +31,12 @@ fields:
             mode: crop
             extension: auto
         type: fileupload
+    gallery:
+        label: 'Add a gallery'
+        span: auto
+        mode: file
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        type: fileupload
