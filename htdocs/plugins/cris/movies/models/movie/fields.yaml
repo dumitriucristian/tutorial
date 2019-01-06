@@ -14,3 +14,11 @@ fields:
         label: Year
         span: auto
         type: text
+    slug:
+        label: 'Movie slug'
+        span: auto
+        preset:
+            field: name
+            type: slug
+        defaultFrom: name
+        type: text

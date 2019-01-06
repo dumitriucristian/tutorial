@@ -12,3 +12,7 @@ columns:
         type: number
         searchable: true
         sortable: true
+    slug:
+        label: 'Movie Slug'
+        type: text
+        searchable: true

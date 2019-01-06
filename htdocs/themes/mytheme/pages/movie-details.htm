@@ -1,12 +1,22 @@
 title = "movie-details"
-url = "/movie/:id"
-is_hidden = 0
+url = "/movie/:slug"
 layout = "default"
+is_hidden = 0
+
 [builderDetails]
 modelClass = "Cris\Movies\Models\Movie"
-identifierValue = "{{ :id }}"
-modelKeyColumn = "id"
+identifierValue = "{{ :slug }}"
+modelKeyColumn = "slug"
 displayColumn = "name"
 notFoundMessage = "Record not found"
 ==
-{% component 'builderDetails' %}
+{% set record = builderDetails.record %}
+{% set displayColumn = builderDetails.displayColumn %}
+{% set notFoundMessage = builderDetails.notFoundMessage %}
+
+{% if record %}
+<h2>{{ record.name }}</h2>
+    {{ record.description|raw}}
+{% else %}
+    {{ notFoundMessage }}
+{% endif %}
