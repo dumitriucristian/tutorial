@@ -11,4 +11,14 @@ class Plugin extends PluginBase
     public function registerSettings()
     {
     }
+
+    public function registerFormWidgets()
+    {
+        return [
+            'Cris\Movies\FormWidgets\Actorbox' => [
+                'label' => 'Actorbox field',
+                'code'  => 'actorbox'
+            ]
+        ];
+    }
 }

@@ -46,3 +46,7 @@ fields:
         descriptionFrom: description
         span: auto
         type: relation
+    actors:
+        label: Actors
+        span: left
+        type: actorbox
