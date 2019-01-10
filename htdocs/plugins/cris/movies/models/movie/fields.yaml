@@ -48,5 +48,6 @@ fields:
         type: relation
     actors:
         label: Actors
+        nameFrom: name
         span: left
         type: actorbox

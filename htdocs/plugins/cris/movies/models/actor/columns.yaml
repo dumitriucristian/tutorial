@@ -1,0 +1,11 @@
+columns:
+    first_name:
+        label: firstname
+        type: text
+        searchable: true
+        sortable: true
+    last_name:
+        label: lastname
+        type: text
+        searchable: true
+        sortable: true

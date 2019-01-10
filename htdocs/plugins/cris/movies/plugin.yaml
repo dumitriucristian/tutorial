@@ -14,3 +14,7 @@ navigation:
                 label: Genres
                 url: cris/movies/genre
                 icon: icon-tag
+            side-menu-item2:
+                label: Actors
+                url: cris/movies/actors
+                icon: icon-star-o

@@ -1,0 +1,10 @@
+name: Actors
+modelClass: Cris\Movies\Models\Actor
+form: $/cris/movies/models/actor/fields.yaml
+defaultRedirect: cris/movies/actors
+create:
+    redirect: 'cris/movies/actors/update/:id'
+    redirectClose: cris/movies/actors
+update:
+    redirect: cris/movies/actors
+    redirectClose: cris/movies/actors

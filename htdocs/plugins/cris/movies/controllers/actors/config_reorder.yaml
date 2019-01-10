@@ -1,0 +1,4 @@
+title: Actors
+modelClass: Cris\Movies\Models\Actors
+toolbar:
+    buttons: reorder_toolbar
