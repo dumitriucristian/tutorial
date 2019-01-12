@@ -9,6 +9,8 @@ identifierValue = "{{ :slug }}"
 modelKeyColumn = "slug"
 displayColumn = "name"
 notFoundMessage = "Record not found"
+
+[Actors]
 ==
 {% set record = builderDetails.record %}
 {% set displayColumn = builderDetails.displayColumn %}
@@ -32,6 +34,8 @@ notFoundMessage = "Record not found"
     {% for genre in record.genre %}
     <a href="/genres-movie/{{genre.genre_title}}">{{genre.genre_title}}</a>
     {% endfor %}
+    
+    {% component 'Actors' %}
 {% else %}
     {{ notFoundMessage }}
 {% endif %}

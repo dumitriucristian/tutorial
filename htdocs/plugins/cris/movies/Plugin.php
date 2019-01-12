@@ -6,6 +6,9 @@ class Plugin extends PluginBase
 {
     public function registerComponents()
     {
+        return [
+          'Cris\Movies\Components\Actors' => 'Actors'
+        ];
     }
 
     public function registerSettings()
