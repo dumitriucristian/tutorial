@@ -6,11 +6,52 @@
 
     class Actors extends ComponentBase{
 
+        private $actors;
+
         public function componentDetails()
         {
             return [
                 'name'        => 'Actors',
                 'description' => 'Display actor list'
+            ];
+        }
+
+        public function defineProperties()
+        {
+            return [
+                  'results' => [
+                      'title' => 'Number of actors',
+                      'description' => 'Set nr of actors that should be displayed',
+                      'default' => 0,
+                      'type' => 'string',
+                      'validationPattern' => '^[0-9]+$',
+                      'validationMessage' => 'Only numbers'
+
+
+                  ],
+
+                'orderby' => [
+                    'title' => 'OrderBy',
+                    'description' => 'Chose the actors display order',
+                    'type' => 'dropdown',
+                    'options' => [
+                        'firstname' => 'First Name',
+                        'lastname' => 'Last Name'
+                    ],
+                    'default' => 'lastname'
+                ],
+
+                'order' => [
+                    'title' => 'Ascendent or descent',
+                    'description' => 'Choose if you wish ascendent or descendt list',
+                    'type' => 'dropdown',
+                    'options' =>[
+                        'asc' => 'Ascendent',
+                        'desc' => 'Descendent'
+                    ],
+                    'default' => 'asc'
+                ],
+
             ];
         }
 
@@ -23,11 +64,25 @@
 
         public function loadActors()
         {
+            $query = Actor::all();
 
-          return  Actor::all();
+            if( $this->property('results') > 0) {
+               $query = $query->take($this->property('results'));
+            }
+
+
+            if($this->property('order') == 'desc' ){
+                $query = $query->sortByDesc($this->property($this->property('orderby')));
+            }else{
+                $query = $query->sortBy($this->property($this->property('orderby')));
+            }
+
+
+
+           return  $query;
         }
 
-        private $actors;
+
 
 
     }
