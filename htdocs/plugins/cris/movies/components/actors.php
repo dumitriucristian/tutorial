@@ -77,12 +77,6 @@
                 $query = $query->sortBy($this->property($this->property('orderby')));
             }
 
-
-
            return  $query;
         }
-
-
-
-
     }
