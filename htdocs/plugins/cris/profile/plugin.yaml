@@ -1,0 +1,6 @@
+plugin:
+    name: 'cris.profile::lang.plugin.name'
+    description: 'cris.profile::lang.plugin.description'
+    author: cris
+    icon: oc-icon-bicycle
+    homepage: ''
